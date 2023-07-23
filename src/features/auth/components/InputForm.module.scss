@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  width: 34.3125rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+
+  .labelBox {
+    display: inline-flex;
+    padding-bottom: 0.25rem;
+    align-items: center;
+    align-self: stretch;
+    color: #666;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .input {
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0.75rem;
+    border: 1px solid #666;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

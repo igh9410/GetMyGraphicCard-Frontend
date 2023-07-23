@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  width: 34.3125rem;
+  height: 3.5rem;
+  padding: 0.875rem 0rem 0.9375rem 0rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5rem;
+  background: #111;
+  color: #fff;
+  text-align: center;
+
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &:hover {
+    background-color: grey;
+  }
+}
