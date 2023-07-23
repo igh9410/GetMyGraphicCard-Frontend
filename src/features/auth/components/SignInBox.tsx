@@ -1,16 +1,16 @@
-import styles from './SignUpBox.module.scss';
+import styles from './SignInBox.module.scss';
 import logo from '@assets/img/icons/Logo.svg';
-import { SignUpFormBox } from './SignUpFormBox';
+import { SignInFormBox } from './SignInFormBox';
 
-export function SignUpBox() {
+export function SignInBox() {
   return (
     <>
-      <div className={styles.createAccountBox}>
+      <div className={styles.signInBox}>
         <div className={styles.logoBox}>
           <img src={logo} alt="Logo" />
         </div>
         <div className={styles.wrapper}>
-          <SignUpFormBox />
+          <SignInFormBox />
         </div>
       </div>
     </>

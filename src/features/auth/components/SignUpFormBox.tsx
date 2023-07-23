@@ -1,10 +1,10 @@
 import { FormEvent, useRef } from 'react';
-import styles from './FormBox.module.scss';
+import styles from './SignUpFormBox.module.scss';
 import { Form } from 'react-router-dom';
 import { InputForm } from './InputForm';
 import { Button } from '@components';
 
-export function FormBox() {
+export function SignUpFormBox() {
   const passwordRef = useRef<HTMLInputElement | null>(null);
   const confirmPasswordRef = useRef<HTMLInputElement | null>(null);
 
@@ -23,12 +23,15 @@ export function FormBox() {
   return (
     <Form method="POST" className={styles.formBox}>
       <div className={styles.textBox}>
-        <p className={styles.createAccount}>Create an account</p>
-        <p className={styles.signUpDescription}>
-          Sign up today and get notified for your
-          <br />
-          graphics card price information!
-        </p>
+        <div className={styles.wrapper}>
+          <p className={styles.createAccount}>Create an account</p>
+          <p className={styles.signUpDescription}>
+            Sign up today and get notified for your
+            <br />
+            graphics card price information!
+          </p>
+        </div>
+
         <InputForm label="Username" />
         <InputForm label="E-mail" />
         <InputForm label="Password" inputRef={passwordRef} />
