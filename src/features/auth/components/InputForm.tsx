@@ -7,15 +7,13 @@ type InputFormProps = HTMLProps<HTMLDivElement> & {
 };
 
 export function InputForm({ label, inputRef }: InputFormProps) {
-  const contentRef = useRef<HTMLInputElement | null>(null);
-
   return (
     <div className={styles.wrapper}>
       <label className={styles.labelBox}>{label}</label>
       {label == 'Password' || label == 'Confirm Password' ? ( // Check for Password or Confirm Password field
         <input className={styles.input} type="password" ref={inputRef} />
       ) : (
-        <input className={styles.input} type="text" ref={contentRef} />
+        <input className={styles.input} type="text" ref={inputRef} />
       )}
     </div>
   );

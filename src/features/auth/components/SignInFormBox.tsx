@@ -10,7 +10,7 @@ export function SignInFormBox() {
   };
 
   return (
-    <Form method="POST" className={styles.formBox}>
+    <Form method="POST" className={styles.formBox} onSubmit={handleSubmit}>
       <div className={styles.textBox}>
         <p className={styles.signIn}>Sign In</p>
         <InputForm label="Username" />
