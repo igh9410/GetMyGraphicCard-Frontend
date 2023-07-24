@@ -14,13 +14,10 @@ export function SignUpFormBox() {
 
   const handleSignUpSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const username = usernameRef.current?.value; // You need to add usernameRef
+    const username = usernameRef.current?.value;
     const email = emailRef.current?.value;
     const password = passwordRef.current?.value;
     const confirmPassword = confirmPasswordRef.current?.value;
-    console.log('Username = ', username);
-    console.log('Password = ', password);
-    console.log('Confirm Password = ', confirmPassword);
 
     if (!username || !email || !password || !confirmPassword) {
       alert('All fields are required');
