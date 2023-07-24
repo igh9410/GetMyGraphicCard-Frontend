@@ -1,4 +1,4 @@
-import { HTMLProps, RefObject, useRef } from 'react';
+import { HTMLProps, RefObject } from 'react';
 import styles from './InputForm.module.scss';
 
 type InputFormProps = HTMLProps<HTMLDivElement> & {

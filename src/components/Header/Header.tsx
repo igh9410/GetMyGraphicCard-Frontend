@@ -31,54 +31,57 @@ export function Header() {
   return (
     <div className={styles.header}>
       <Search />
+
       <div className={styles.buttonWrapper}>
-        {isLoggedIn ? ( // Show User Page and Sign Out button when logged in
-          <>
-            <Button
-              style={{
-                width: '6.3125rem',
-                height: '2.875rem',
-                marginRight: '1.25rem',
-              }}
-              variant="contained"
-              size="medium"
-            >
-              {username}
-            </Button>
-            <Button
-              style={{ width: '6.3125rem', height: '2.875rem' }}
-              variant="contained"
-              size="medium"
-              onClick={handleSignOutClick}
-            >
-              Sign Out
-            </Button>
-          </>
-        ) : (
-          // Show Sign Up and Sign In Button when not logged in
-          <>
-            <Button
-              style={{
-                width: '6.3125rem',
-                height: '2.875rem',
-                marginRight: '1.25rem',
-              }}
-              variant="contained"
-              size="medium"
-              onClick={handleSignUpClick}
-            >
-              Sign Up
-            </Button>
-            <Button
-              style={{ width: '6.3125rem', height: '2.875rem' }}
-              variant="contained"
-              size="medium"
-              onClick={handleSignInClick}
-            >
-              Sign In
-            </Button>
-          </>
-        )}
+        <div>
+          {isLoggedIn ? ( // Show User Page and Sign Out button when logged in
+            <>
+              <Button
+                style={{
+                  width: '6.3125rem',
+                  height: '2.875rem',
+                  marginRight: '1.25rem',
+                }}
+                variant="contained"
+                size="medium"
+              >
+                {username}
+              </Button>
+              <Button
+                style={{ width: '6.3125rem', height: '2.875rem' }}
+                variant="contained"
+                size="medium"
+                onClick={handleSignOutClick}
+              >
+                Sign Out
+              </Button>
+            </>
+          ) : (
+            // Show Sign Up and Sign In Button when not logged in
+            <>
+              <Button
+                style={{
+                  width: '6.3125rem',
+                  height: '2.875rem',
+                  marginRight: '1.25rem',
+                }}
+                variant="contained"
+                size="medium"
+                onClick={handleSignUpClick}
+              >
+                Sign Up
+              </Button>
+              <Button
+                style={{ width: '6.3125rem', height: '2.875rem' }}
+                variant="contained"
+                size="medium"
+                onClick={handleSignInClick}
+              >
+                Sign In
+              </Button>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

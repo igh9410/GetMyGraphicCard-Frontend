@@ -4,13 +4,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 import { axiosInstance } from '@lib/axios';
-import { API_URL } from '@config';
 import Cookies from 'js-cookie';
 import axios from 'axios';
 
-const signUpURL = API_URL + '/api/auth/signup';
-const loginURL = API_URL + '/api/auth/login';
-const logoutURL = API_URL + '/api/auth/logout';
+const signUpURL = '/api/auth/signup';
+const loginURL = '/api/auth/login';
+const logoutURL = '/api/auth/logout';
 
 export async function signUpFn({
   username,
