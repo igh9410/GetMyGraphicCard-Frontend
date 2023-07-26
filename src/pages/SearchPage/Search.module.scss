@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .gridBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.25rem;
+    width: 100%;
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+}

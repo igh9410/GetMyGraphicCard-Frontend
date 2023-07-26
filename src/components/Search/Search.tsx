@@ -14,10 +14,11 @@ export function Search() {
       return;
     }
     navigate({
-      pathname: '/items/search',
+      pathname: '/search',
       search: createSearchParams({
         title: searchRef.current?.value,
         pageNo: '1',
+        size: '8',
       }).toString(),
     });
   };

@@ -1,18 +1,10 @@
 import { axiosInstance } from '@lib/axios';
-
-export type SearchParams = {
-  title: string;
-  pageNo?: number;
-  size?: number;
-  lowest?: number;
-  highest?: number;
-};
+import { SearchParams } from '../types';
 
 export async function fetchItemsFn(params: SearchParams) {
-  const response = await axiosInstance.get('/api/search', {
+  const response = await axiosInstance.get('/api/items/search', {
     params,
   });
-  console.log(response.data);
 
   // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return response.data;

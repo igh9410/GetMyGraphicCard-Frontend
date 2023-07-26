@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .itemImage {
+    width: 21.5625rem;
+    height: 19.6875rem;
+    flex-shrink: 0;
+  }
+
+  .itemTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    a,
+    p {
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    .iconBox {
+      flex-grow: 1; /* make .iconBox take up the remaining space */
+      display: flex;
+      align-items: center; /* center the content vertically */
+      justify-content: center; /* center the content horizontally */
+    }
+  }
+}
