@@ -22,7 +22,7 @@ export const useAddSubscriptions = () => {
     },
     onError: (error) => {
       // Error actions
-      console.log('Sign Up Failed');
+      console.log('Add to Subscription failed');
     },
   });
 

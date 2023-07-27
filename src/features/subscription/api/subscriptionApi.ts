@@ -4,9 +4,9 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const subscriptionUrl = '/api/subscriptions/';
-const token = Cookies.get('token');
 
 export async function fetchSubscriptionsFn() {
+  const token = Cookies.get('token');
   if (!token) {
     throw Error('Token is not included in the Authorization header');
   }
@@ -32,6 +32,7 @@ export async function fetchSubscriptionsFn() {
 }
 
 export async function addSubscriptionsFn(id: string) {
+  const token = Cookies.get('token');
   if (!token) {
     throw Error('Token is not included in the Authorization header');
   }
@@ -57,6 +58,7 @@ export async function addSubscriptionsFn(id: string) {
 }
 
 export async function deleteSubscriptionsFn(index: number) {
+  const token = Cookies.get('token');
   if (!token) {
     throw Error('Token is not included in the Authorization header');
   }
