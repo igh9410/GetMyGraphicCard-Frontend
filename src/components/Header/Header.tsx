@@ -28,6 +28,11 @@ export function Header() {
     }
   };
 
+  const handleUserClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    navigate('/user');
+  };
+
   return (
     <div className={styles.header}>
       <Search />
@@ -44,6 +49,7 @@ export function Header() {
                 }}
                 variant="contained"
                 size="medium"
+                onClick={handleUserClick}
               >
                 {username}
               </Button>

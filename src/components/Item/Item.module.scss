@@ -15,7 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 100%;
     height: 100%;
+    box-sizing: border-box;
 
     a,
     p {
@@ -24,10 +27,8 @@
     }
 
     .iconBox {
-      flex-grow: 1; /* make .iconBox take up the remaining space */
       display: flex;
-      align-items: center; /* center the content vertically */
-      justify-content: center; /* center the content horizontally */
+      margin-top: auto;
     }
   }
 }

@@ -5,10 +5,10 @@
 import React, { ChangeEvent, useState } from 'react';
 import styles from './Search.module.scss';
 import { useItemSearch } from '@hooks';
-import { SearchItem } from '@features/search';
 import { Pagination } from '@mui/material';
 import { useSearchParams } from 'react-router-dom';
 import { Item } from '@components';
+import { SearchItem } from '@features/search';
 
 export function Search() {
   const { data, isLoading, error } = useItemSearch();
